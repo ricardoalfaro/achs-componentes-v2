@@ -97,7 +97,7 @@ ul {
 .app .sidebar {
 	width:250px;
 	float:left;
-	padding:10px 10px 10px 20px;
+	padding:30px 10px 10px 20px;
 	*width:225px;
 	background:#f1f1f1;
 }
@@ -105,6 +105,7 @@ ul {
 .app .sidebar ul {
 	margin-bottom:25px;
 	padding: 0;
+	margin-top: 10px;
 }
 
 .app .sidebar ul li {
@@ -113,8 +114,8 @@ ul {
 
 .app .sidebar a {
 	text-decoration:none;
-	padding:12px 0;
-	border-bottom:1px solid #ccc;
+	padding:10px 0;
+	border-bottom:1px dotted #ccc;
 	display:block;
 	outline:0px;
 	color:#666
@@ -159,6 +160,13 @@ ul {
 	text-transform: uppercase;
 	letter-spacing: -0.05em;
 	color: #25823B;
+	font-weight: normal;
+	line-height: 23px;
+	padding:5px 0;
+	border-bottom:3px solid #CB7A00;
+	display: inline-block;
+	*float: left;
+	*height: 30px;
 }
 
 .detalle-componente {
@@ -190,11 +198,20 @@ ul {
 }
 
 .app .content h4 {
-	font-weight:bold;
+	font-family: 'DinWeb', Arial, sans-serif;
+	font-weight:normal;
 	font-size:18px;
 	margin-bottom:12px;
 	margin-top:30px;
 	display:block;
+	letter-spacing: -0.05em;
+}
+
+.clearline {
+	border-bottom: 1px solid #CB7A00;
+	clear: both;
+	position: relative;
+	top: -2px;
 }
 
 .codigo-componente .classList li {

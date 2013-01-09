@@ -1,0 +1,143 @@
+@charset "ISO-8859-1";
+/* Estilos de Notificaciones */
+
+.canales{
+	position:relative;
+	z-index:1;
+	display:block;
+	width:16px;
+	margin:3px;
+	height:16px;
+	background:url(images/icons-canales.gif) no-repeat 0 0;
+	margin-top:-18px;
+	cursor:pointer;
+}
+
+.fb-enabled{
+	background-position:-48px 0;
+}
+
+.fb-disabled{
+	background-position:-48px -16px;
+}
+
+.tw-enabled{
+	background-position:-32px 0;
+}
+
+.tw-disabled{
+	background-position:-32px -16px;
+}
+
+.mail-enabled{
+	background-position:0 0;
+}
+
+.mail-disabled{
+	background-position:0 -16px;
+}
+
+.sms-enabled{
+	background-position:-16px 0;
+}
+
+.sms-disabled{
+	background-position:-16px -16px;
+}
+
+.ui-accordion{
+	overflow:hidden;
+}
+
+.toolTips{
+	width:200px;
+	padding:10px;
+	font-weight:normal;
+}
+
+.canales-seccion .canal-unidad{
+	float:left;
+}
+
+.canal-unidad input{
+	border:none;
+	opacity:0;
+}
+
+.ui-accordion h3{
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+
+.ui-accordion h3 a{
+	font-weight:bold  !important;
+	color:#000;
+}
+
+.ui-accordion-content .standar-grid-model .subnivel-th th{
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+
+.component-standar-grid .ui-corner-all{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.ui-accordion .eventos-grid td{
+	padding-top:8px !important;
+	padding-bottom:8px !important;
+}
+d
+.content-modal .all-content ul{
+	margin:0;
+	padding:12px 0;
+	list-style:none;
+	border-bottom:1px solid #ccc;
+}
+
+.grid-bitacora{
+	overflow:auto;
+	height:120px;
+}
+
+.configNotificacion{
+	width:440px;
+}
+
+.configNotificacion .component-search-forms{
+	padding:10px;
+}
+
+.configNotificacion .forms-row-single-division.right{
+	width:230px;
+}
+
+.configNotificacion .forms-row-single-division.right{
+	width:230px;
+}
+
+.configNotificacion .forms-row-single-division ul{
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+}
+.configNotificacion .forms-row-single-division ul li{
+	padding:3px 0;
+}
+
+.result-zona{
+	height:110px;
+}
+
+.forms-row-single-division.right{
+	width:inherit !important;
+}
+
+.forms-structure-rows cite{
+	width:inherit !important;
+	padding:4px 0;
+}
+
+

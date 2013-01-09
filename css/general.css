@@ -1,0 +1,258 @@
+/* Controles UI ACHS */
+/* CSS de la Aplicación de Componentes */
+/* Desarrollado por Continuum Lltda. 2010 */
+/*=============================*/
+
+body {
+	padding:0;
+	margin:0;
+	background:#f1f1f1;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+/* Forms */
+
+form {
+	padding:0;
+	margin:0;
+	outline:0px;
+}
+
+/* Títulos */
+
+h1 {
+	font-size:20px;
+	margin:0;
+	color:#FFF;
+	text-shadow: -1px -1px 6px #000000;
+	letter-spacing:-1px;
+}
+
+a {
+	color:#333;
+}
+
+ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+/* Aplicacion */
+
+.content-header-app {
+	background:#060;
+	position: fixed;
+	width: 100%;
+	box-shadow: 1px 1px 3px #666;
+}
+
+.header-app {
+	width:980px;
+	margin:0 auto;
+	font-size:12px;
+	padding:30px 0 15px 0;
+	background:url(../images/achs-logo.png) no-repeat 915px 9px;
+}
+
+.footer-app {
+	width:980px;
+	margin:0 auto;
+}
+
+.footer-app h6 {
+	margin:15px 5px;
+	text-align:left;
+	color:#666;
+	text-shadow:0 1px 0 #FFFFFF;
+}
+
+.content-app {
+	background:#fff;
+	padding-top:60px;
+}
+
+.app {
+	width:980px;
+	margin:0 auto;
+	font-size:12px;
+	background:#FFF;
+	overflow:hidden;
+	background:url(../images/sidebar-bg.gif) repeat-y 260px 0 #fff;
+	padding-top:20px;
+}
+
+.app .sidebar {
+	width:250px;
+	float:left;
+	padding:10px 25px 10px 5px;
+	*width:225px;
+}
+
+.app .sidebar ul {
+	margin-bottom:25px;
+	border:1px solid #f1f1f1;
+	padding: 7px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+
+.app .sidebar ul li {
+	text-decoration:none;
+}
+
+.app .sidebar a {
+	text-decoration:none;
+	padding:8px 6px;
+	border-bottom:1px solid #eee;
+	display:block;
+	outline:0px;
+	color:#666;
+}
+
+.app .sidebar a:hover {
+	background:#f1f1f1;
+}
+
+.app .sidebar a.last {
+	border-bottom:none;
+}
+
+.app .content {
+	width:658px;
+	float:left;
+	padding:10px 20px;
+	min-height:995px;
+}
+
+.app .content h2 {
+	font-size:24px;
+	color:#006600;
+	margin:0;
+	padding:18px 0 0 0;
+	display:block;
+}
+
+.app .content p {
+	line-height:18px;
+}
+
+.app .sidebar h3 {
+	font-size:16px;
+	margin:0;
+	padding:18px 0;
+	display:block;
+}
+
+.detalle-componente {
+	color:#666;
+	line-height:18px;
+	margin:18px 0;
+}
+
+.codigo-componente {
+	margin:15px 0 30px 0;
+	border-top:1px solid #eee;
+	padding-top:10px;
+}
+
+.codigo-componente pre {
+	background-color:#F1F1F1;
+	overflow:auto;
+	padding:10px;
+	-webkit-box-shadow:inset 0 0 6px #ddd;
+	-moz-box-shadow:inset 0 0 6px #ddd;
+	box-shadow:inset 0 0 6px #ddd;
+	border:1px solid #ccc;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-ms-border-radius:4px;
+	border-radius:4px;
+}
+
+.app .content h4 {
+	font-weight:bold;
+	font-size:18px;
+	margin-bottom:12px;
+	margin-top:30px;
+	display:block;
+}
+
+.codigo-componente .classList li {
+	margin:3px 0;
+}
+
+.codigo-componente .doc-nav {
+	overflow:hidden;
+	background:#ddd;
+	margin:2px 0
+}
+
+.codigo-componente .doc-nav li {
+	float:left;
+}
+
+.codigo-componente .datePickerBox {
+	float:none;
+}
+
+.codigo-componente .component-search .datePickerBox {
+	float:left;
+}
+
+.componente a {
+	color:#090;
+	text-decoration:none;
+}
+
+.componente a:hover{
+	color:#0c0;
+	text-decoration:underline;
+}
+
+.new{
+	width: 25px;
+	*height: 10px;
+	vertical-align: middle;
+	padding: 2px 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #F51D1F;
+	font-weight: bold;
+	color: white;
+	font-size: 7px;
+	text-transform: uppercase;
+	margin: 1px 4px 0 0;
+	float:right;
+}
+
+.color_palette{
+	overflow:hidden;
+	border: 2px solid #FFFFFF;
+  -webkit-box-shadow: 0 0 4px #DDDDDD;
+	-moz-box-shadow: 0 0 4px #DDDDDD;
+	box-shadow: 0 0 4px #DDDDDD;
+}
+
+.color_palette li{
+	display:block;
+	font-size: 14px;
+  padding: 30px;
+  text-align: center;
+  width: 102px;
+	float:left;
+	border-bottom:1px solid #FFF;
+	border-right:1px solid #fff;
+	
+}
+
+.clasificaciones td,
+.clasificaciones th{
+	
+	font-size:12px;
+	border-bottom:1px solid #ddd;
+	text-align:left;
+	padding:8px 55px 8px 6px;
+}

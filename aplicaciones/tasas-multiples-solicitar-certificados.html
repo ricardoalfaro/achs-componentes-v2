@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>ACHS</title>
+<link href="../css/componentes.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+/* Estos estilos van incluidos en la aplicación y solo fueron traspasados aquí por efectos de visualizacion */
+
+.component-search-forms.solicita-estadisticas{background-position:22% 0;}
+.solicita-estadisticas .forms-row-single-division.left{width:27%;}
+.solicita-estadisticas .forms-row-single-division.right{width:68%;}
+.solicita-estadisticas .forms-row-single-division.first{height:130px;}
+.solicita-estadisticas .forms-row-single-division.especial{min-height:52px;}
+.component-search-forms.solicita-estadisticas table{border:none !important;}
+.component-search-forms.solicita-estadisticas table td{padding:2px 5px;}
+.component-search-forms.solicita-estadisticas table label{padding-left:8px;}
+.solicita-estadisticas .datePickerBox {width:105px;}
+
+</style>
+</head>
+<body>
+<div id="app">
+	<div class="links-content derecho"> <a href="javascript:void(0);" class="help-link">Ayuda</a> </div>
+	<h1>Tasas de Selecci&oacute;n M&uacute;ltiple</h1>
+	
+	<div class="component-message-result">
+		<p>Solicitar estadisticas grupo.</p>
+		<a class="accion volverAGrupos" href="javascript:void(0)">Volver</a> </div>
+	<div class="component-index-guide">
+		<ul>
+			<li><span class="first current-item"><strong>Paso 1</strong> Selecci&oacute;n de suscursal(es)</li>
+			<li><span class="last next-item"><strong>Paso 2</strong> Datos solicitados</li>
+		</ul>
+	</div>
+	<div class="search-top"><span></span></div>
+	<div class="component-search">
+		<div class="component-search-forms solicita-estadisticas">
+			<form action="">
+				<ol class="forms-structure-rows">
+					<li>
+						<div class="forms-row-single-division left first"><strong>Informaciï¿½n solicitada</strong></div>
+						<div class="forms-row-single-division right">
+							<table>
+								<tr>
+									<td><input type="checkbox"><label>Total accidentes</label></td>
+									<td><input type="checkbox"><label>Tasa de siniestridad por invalideces y muertes</label></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"><label>Total d&iacute;as perdidos</label></td>
+									<td><input type="checkbox"><label>Tasa de siniestridad total</label></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"><label>N&uacute;mero de trabajadores</label></td>
+									<td><input type="checkbox"><label>Tasa de accidentalidad total</label></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"><label>Tasa de frecuencia</label></td>
+									<td><input type="checkbox"><label>N&ordm; de pensionados por accidente y enfermedad</label></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"><label>Tasa de gravedad</label></td>
+									<td><input type="checkbox"><label>N&ordm; de indemnizados por accidente y enfermedad</label></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"><label>Tasa de siniestralidad por incap. temporales</label></td>
+									<td><input type="checkbox"><label>N&ordm; de accidentes fatales</label></td>
+								</tr>
+							</table>
+						</div>
+					</li>
+					<li>
+						<div class="forms-row-single-division left"><strong>Tipo de certificado:</strong></div>
+						<div class="forms-row-single-division right nospace"><input type="radio" id="opcion1" name="opciones"><label for="opcion1">Anual</label><input type="radio" id="opcion2" name="opciones" ><label for="opcion2">Mensual</label></div>
+					</li>
+					<li>
+						<div class="forms-row-single-division left"><strong>N&ordm; de per&iacute;odos:</strong></div>
+						<div class="forms-row-single-division right nospace">
+						<input type="radio" id="num1" name="opciones"><label for="num1">1</label>
+						<input type="radio" id="num2" name="opciones" ><label for="num2">2</label>
+						<input type="radio" id="num3" name="opciones"><label for="num3">3</label>
+						<input type="radio" id="num4" name="opciones" ><label for="num4">4</label>
+						<input type="radio" id="num5" name="opciones"><label for="num5">5</label>
+						</div>
+					</li>
+					<li>
+						<div class="forms-row-single-division left last"></div>
+						<div class="forms-row-single-division right nospace">
+							<table cellpadding="0" cellspacing="0" class="">
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<tr>
+									<th></th>
+									<th>Periodo 1</th>
+									<th>Periodo 2</th>
+									<th>Periodo 3</th>
+									<th>Periodo 4</th>
+									<th>Periodo 5</th>
+								</tr>
+								<tr>
+									<td><label>Desde</label></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+								</tr>
+								<tr>
+									<td><label>Hasta</label></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+									<td><span class="datePickerBox"><input type="text" id="desde" class="boxCalendar"><a href="javascript:void(0)" class="popCalendar"></a></span></td>
+								</tr>
+							</table>
+						</div>
+					</li>
+				</ol>
+			</form>
+		</div>
+		<div class="component-section-block">
+			<table>
+				<col width="400px">
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<tr>
+					<td>Ingrese las horas hombre </td>
+					<td>Per&iacute;odo 1</td>
+					<td>Per&iacute;odo 2</td>
+					<td>Per&iacute;odo 3</td>
+					<td>Per&iacute;odo 4</td>
+					<td>Per&iacute;odo 5</td>
+				</tr>
+			</table>
+		</div>
+		<div class="component-standar-grid">
+			<table class="standar-grid-model">
+				<col width="400px">
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<tr>
+					<th colspan="6">Nombre empresa</th>
+				</tr>
+				<tr>
+					<td><span>[Nombre sucursal]</span><span>[Nombre comuna]</span><span>[X region]</span></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+				</tr>
+				<tr>
+					<th colspan="6">Nombre empresa</th>
+				</tr>
+				<tr>
+					<td><span>[Nombre sucursal]</span><span>[Nombre comuna]</span><span>[X region]</span></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+				</tr>
+				<tr>
+					<td><span>[Nombre sucursal]</span><span>[Nombre comuna]</span><span>[X region]</span></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+					<td><input type="text" class="boxPeriodo"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="component-search-forms">
+				<ol class="forms-structure-rows">
+					<li>
+						<div class="forms-row-single-division left first last"><strong>Correo donde se enviar&aacute;n los certificados</strong></div>
+						<div class="forms-row-single-division right"><input type="text"></div>
+					</li>
+				</ol>
+		</div>
+	</div>
+	<div class="component-search-actions">
+		
+		<button disabled><div><span>< Paso Anterior</span></div></button>
+		<button><div><span>Siguiente Paso ></span></div></button>
+		<button class="cancel-btn"><div><span>Cancelar</span></div></button>
+</div>
+</div>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../js/controles-achs.js" type="text/javascript"></script>
+</body>
+</html>

@@ -3,11 +3,22 @@
 /* Desarrollado por Continuum Lltda. 2010 */
 /*=============================*/
 
+/****Tipografia*******/
+
+@font-face { font-family: DINWeb; src: url(../fonts/DINWeb.eot); }
+@font-face { font-family: DINWeb; src: url(../fonts/DINWeb.woff) format("woff"); }
+@font-face { font-family: DINWeb-Medium; src: url(../fonts/DINWeb-Medium.eot); }
+@font-face { font-family: DINWeb-Medium; src: url(../fonts/DINWeb-Medium.woff) format("woff"); }
+@font-face { font-family: DINWeb-Black; src: url(../fonts/DINWeb-Black.eot); }
+@font-face { font-family: DINWeb-Black; src: url(../fonts/DINWeb-Black.woff) format("woff"); }
+
+
+
 body {
 	padding:0;
 	margin:0;
-	background:#f1f1f1;
-	font-family:Helvetica, Arial, sans-serif;
+	background:#EBEDEC;
+	font-family:'DinWeb', Helvetica, Arial, sans-serif;
 }
 
 /* Forms */
@@ -21,11 +32,12 @@ form {
 /* Títulos */
 
 h1 {
+	font-family:'DinWeb', Helvetica, Arial, sans-serif;
 	font-size:20px;
 	margin:0;
-	color:#FFF;
-	text-shadow: -1px -1px 6px #000000;
+	color:#333;
 	letter-spacing:-1px;
+	text-align: right;
 }
 
 a {
@@ -41,18 +53,18 @@ ul {
 /* Aplicacion */
 
 .content-header-app {
-	background:#060;
+	background:#FFF;
 	position: fixed;
 	width: 100%;
-	box-shadow: 1px 1px 3px #666;
+	border-bottom: 4px solid #24823A;
 }
 
 .header-app {
 	width:980px;
 	margin:0 auto;
 	font-size:12px;
-	padding:30px 0 15px 0;
-	background:url(../images/achs-logo.png) no-repeat 915px 9px;
+	padding:65px 0 20px 0;
+	background:url(../images/achs-logo.png) no-repeat 0 18px;
 }
 
 .footer-app {
@@ -61,15 +73,15 @@ ul {
 }
 
 .footer-app h6 {
-	margin:15px 5px;
+	margin:35px 5px;
 	text-align:left;
 	color:#666;
 	text-shadow:0 1px 0 #FFFFFF;
 }
 
 .content-app {
-	background:#fff;
-	padding-top:60px;
+	background:#EBEDEC;
+	padding-top:130px;
 }
 
 .app {
@@ -79,23 +91,20 @@ ul {
 	background:#FFF;
 	overflow:hidden;
 	background:url(../images/sidebar-bg.gif) repeat-y 260px 0 #fff;
-	padding-top:20px;
+	box-shadow: 0 0 3px #999;
 }
 
 .app .sidebar {
 	width:250px;
 	float:left;
-	padding:10px 25px 10px 5px;
+	padding:10px 10px 10px 20px;
 	*width:225px;
+	background:#f1f1f1;
 }
 
 .app .sidebar ul {
 	margin-bottom:25px;
-	border:1px solid #f1f1f1;
-	padding: 7px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	border-radius:5px;
+	padding: 0;
 }
 
 .app .sidebar ul li {
@@ -104,11 +113,12 @@ ul {
 
 .app .sidebar a {
 	text-decoration:none;
-	padding:8px 6px;
-	border-bottom:1px solid #eee;
+	padding:12px 0;
+	border-bottom:1px solid #ccc;
 	display:block;
 	outline:0px;
-	color:#666;
+	color:#666
+	font-size:13px;
 }
 
 .app .sidebar a:hover {
@@ -120,18 +130,20 @@ ul {
 }
 
 .app .content {
-	width:658px;
+	width:635px;
 	float:left;
-	padding:10px 20px;
+	padding:30px;
 	min-height:995px;
 }
 
 .app .content h2 {
+	font-family: 'DinWeb', Arial, sans-serif;
 	font-size:24px;
 	color:#006600;
 	margin:0;
 	padding:18px 0 0 0;
 	display:block;
+	text-transform: uppercase;
 }
 
 .app .content p {
@@ -139,10 +151,14 @@ ul {
 }
 
 .app .sidebar h3 {
+	font-family: 'DinWeb', Arial, sans-serif;
 	font-size:16px;
 	margin:0;
 	padding:18px 0;
 	display:block;
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
+	color: #25823B;
 }
 
 .detalle-componente {
@@ -158,9 +174,10 @@ ul {
 }
 
 .codigo-componente pre {
+	font-family: Monaco;
 	background-color:#F1F1F1;
 	overflow:auto;
-	padding:10px;
+	padding:14px;
 	-webkit-box-shadow:inset 0 0 6px #ddd;
 	-moz-box-shadow:inset 0 0 6px #ddd;
 	box-shadow:inset 0 0 6px #ddd;
@@ -169,6 +186,7 @@ ul {
 	-webkit-border-radius:4px;
 	-ms-border-radius:4px;
 	border-radius:4px;
+	font-size: 14px;
 }
 
 .app .content h4 {
@@ -245,12 +263,12 @@ ul {
 	float:left;
 	border-bottom:1px solid #FFF;
 	border-right:1px solid #fff;
-	
+
 }
 
 .clasificaciones td,
 .clasificaciones th{
-	
+
 	font-size:12px;
 	border-bottom:1px solid #ddd;
 	text-align:left;

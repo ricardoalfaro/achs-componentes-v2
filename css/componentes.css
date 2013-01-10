@@ -3,6 +3,17 @@
 /* Desarrollado por Continuum Lltda. 2010 */
 /*=============================*/
 
+/****Tipografia*******/
+
+@font-face { font-family: DINWeb; src: url(../fonts/DINWeb.eot); }
+@font-face { font-family: DINWeb; src: url(../fonts/DINWeb.woff) format("woff"); }
+@font-face { font-family: DINWeb-Medium; src: url(../fonts/DINWeb-Medium.eot); }
+@font-face { font-family: DINWeb-Medium; src: url(../fonts/DINWeb-Medium.woff) format("woff"); }
+@font-face { font-family: DINWeb-Black; src: url(../fonts/DINWeb-Black.eot); }
+@font-face { font-family: DINWeb-Black; src: url(../fonts/DINWeb-Black.woff) format("woff"); }
+
+
+
 .app {
 	width:955px;
 	font-family:Arial;
@@ -11,7 +22,7 @@
 /* Contenidos Generales */
 .contenedor-tipo-buscador {
 	width:570px;
-	
+
 }
 
 .grid-eventos-accidente {
@@ -50,7 +61,7 @@ form {
 	padding:0;
 	margin:0;
 	outline:0px;
-	cursor: 
+	cursor:
 }
 
 form input {
@@ -62,8 +73,8 @@ form input {
 
 form input[type=text]
 {
-	height:20px;
-	border:1px solid #666;
+	height:22px;
+	border:1px solid #ccc;
 }
 
 form textarea {
@@ -104,21 +115,20 @@ form select {
 }
 
 .forms-row-single-division.nospace {
-	padding:2px 0 !important;
+	padding:4px 0 !important;
 }
 
 .forms-row-single-division.left {
 	width:22%;
 	margin-right:5%;
-	background:url(../images/item-bottom.gif) repeat-x 0 bottom;
+	border-bottom: 1px solid #ddd;
 }
 
 .forms-row-single-division.wide {
 	width:100%;
-	/*border-bottom:1px solid #b8c9bb;
+	border-bottom:1px solid #ddd;
 	border-top:1px solid #FFF;*/
 	font-size:13px;
-	background:url(../images/item-bottom.gif) repeat-x 0 bottom;
 }
 
 .forms-row-single-division.first {
@@ -402,7 +412,7 @@ button div {
 	background:white;
 	cursor:pointer;
 	/*	height:31px;*/
-	
+
 }
 
 button div.over {
@@ -462,42 +472,46 @@ button.cancel-btn div span {
 
 /* Navigator Tabs */
 .component-navigator-tabs {
-	font-family:Arial;
+	font-family:Helvetica, Arial, sans-serif;
+	letter-spacing: -0.05em;
 	font-size:12px;
 	color:black;
-	background:url(../images/component-background-tabs-end.gif) repeat-x 0 bottom;
+	border: 1px solid #ccc;
+	border-bottom: none;
 	clear:both;
+	padding: 2px;
 }
 
 .component-navigator-tabs ul {
 	margin:0;
 	padding:0;
 	list-style:none;
-	/*overflow:hidden;*/
-	background:url(../images/component-tab-close-top.gif) no-repeat right bottom;
+	background:;
 	display:block;
-	height:32px;
+	height:26px;
+	background: #EBEDEC;
+	padding: 2px;
 }
 
 .component-navigator-tabs ul li {
 	margin:0;
 	padding:0;
 	float:left;
-	background:url(../images/component-tab-unselect.gif) repeat-x 0 bottom #ececec;
+	background:#00843F;
 }
 
 .component-navigator-tabs ul li a {
 	display:block;
 	text-decoration:none;
-	color:#999;
+	color:#fff;
 	outline:0px;
-	padding:9px 20px 9px 20px;
-	background:url(../images/component-tab-separator.gif) 0 5px no-repeat;
+	padding:7px 20px 7px 20px;
+
 }
 
 .component-navigator-tabs ul li a:hover {
-	background:url(../images/component-tab-unselect-over.gif) repeat-x 0 bottom #ddd;
-	color:#000;
+	color:#FFF;
+	text-decoration: none;
 }
 
 .component-navigator-tabs ul li a em {
@@ -509,15 +523,17 @@ button.cancel-btn div span {
 	background-position: -3px 10px;
 }
 
+.component-navigator-tabs .tab-unselect {
+	border-right: 1px solid #FFF;
+}
+
 .component-navigator-tabs .tab-unselect.first,
 .component-navigator-tabs .tab-unselect.first a,
 .component-navigator-tabs .tab-unselect.first a:hover,
 .component-navigator-tabs .tab-select.first,
 .component-navigator-tabs .tab-select.first a,
 .component-navigator-tabs .tab-select.first a:hover {
-	-webkit-border-top-left-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	border-top-left-radius: 6px;
+
 }
 
 .component-navigator-tabs .tab-unselect.last,
@@ -526,39 +542,42 @@ button.cancel-btn div span {
 .component-navigator-tabs .tab-select.last,
 .component-navigator-tabs .tab-select.last a,
 .component-navigator-tabs .tab-select.last a:hover {
-	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topright: 6px;
-	border-top-right-radius: 6px;
+
 }
 
 .component-navigator-tabs .tab-select.unit,
 .component-navigator-tabs .tab-select.unit a {
-	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topright: 6px;
-	border-top-right-radius: 6px;
-	-webkit-border-top-left-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	border-top-left-radius: 6px;
+
 }
 
 .component-navigator-tabs .tab-select {
-	background:url(../images/component-tab-select-left.gif) no-repeat 0 0;
+	background:#FFF;
 }
 
 .component-navigator-tabs .tab-select a,
 .component-navigator-tabs .tab-select a:hover {
-	background:url(../images/component-tab-select-right.gif) no-repeat right 0;
 	font-weight:bold;
 	border:none;
 	color:#000;
 }
+
+/*.component-navigator-tabs a{
+	color:#333 !important;
+}
+
+.component-navigator-tabs a:hover,
+.component-navigator-menu a:hover{
+	color:#333 !important;
+	text-decoration:none !important;
+}
+*/
+
 
 /* Navigator Menu */
 .component-navigator-menu {
 	font-family:Arial;
 	font-size:12px;
 	color:black;
-	background:url(../images/component-background-menu-end.gif) repeat-x 0 bottom;
 	margin-bottom:8px;
 }
 
@@ -567,22 +586,21 @@ button.cancel-btn div span {
 	padding:0;
 	list-style:none;
 	/*overflow:hidden;*/
-	background:url(../images/component-menu-close-top.gif) no-repeat right bottom;
 	display:block;
 	height:30px;
+	border-bottom: 1px solid #ccc;
 }
 
 .component-navigator-menu ul li {
 	margin:0;
 	padding:0;
 	float:left;
-	background:url(../images/component-menu-unselect.gif) repeat-x 0 bottom #FFF;
 }
 
 .component-navigator-menu ul li a {
 	display:block;
 	text-decoration:none;
-	color:#060;
+	color:#666;
 	outline:0px;
 	padding:8px 16px;
 	background:url(../images/component-menu-separator.gif) 0 10px no-repeat;
@@ -591,6 +609,7 @@ button.cancel-btn div span {
 .component-navigator-menu ul li a:hover {
 	background:none;
 	color:#030;
+	text-decoration: none;
 }
 
 .component-navigator-menu ul li a em {
@@ -608,9 +627,7 @@ button.cancel-btn div span {
 .component-navigator-menu .tab-select.first,
 .component-navigator-menu .tab-select.first a,
 .component-navigator-menu .tab-select.first a:hover {
-	-webkit-border-top-left-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	border-top-left-radius: 6px;
+
 }
 
 .component-navigator-menu .tab-unselect.last,
@@ -619,55 +636,43 @@ button.cancel-btn div span {
 .component-navigator-menu .tab-select.last,
 .component-navigator-menu .tab-select.last a,
 .component-navigator-menu .tab-select.last a:hover {
-	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topright: 6px;
-	border-top-right-radius: 6px;
+
 }
 
 .component-navigator-menu .tab-select.unit,
 .component-navigator-menu .tab-select.unit a {
-	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topright: 6px;
-	border-top-right-radius: 6px;
-	-webkit-border-top-left-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	border-top-left-radius: 6px;
+
 }
 
 .component-navigator-menu .tab-select {
-	background:url(../images/component-menu-select-left.gif) no-repeat 0 0;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	background: #fff;
 }
 
 .component-navigator-menu .tab-select a,
 .component-navigator-menu .tab-select a:hover {
-	background:url(../images/component-menu-select-right.gif) no-repeat right 0;
 	font-weight:bold;
 	border:none;
-	color:#000;
+	color:darkOrange;
+	text-decoration: none;
 }
 
 /* Buscador */
 .component-search {
 	font-family:Arial;
 	border:1px solid #d2d2d2;
-	-webkit-border-bottom-right-radius: 6px;
-	-webkit-border-bottom-left-radius: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-moz-border-radius-bottomleft: 6px;
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius: 6px;
 	border-bottom-width:2px;
 	border-top:none;
 }
 
 .search-top {
-	background:url(../images/component-background-tabs-end.gif) repeat-x 0 bottom;
+	border-bottom: 1px solid #ccc;
 	height:10px;
 }
 
 .component-search-forms {
 	padding:10px 15px 10px 25px;
-	background:/*url(../images/component-subcontent-mid.gif) repeat-y 40% 0*/ #D9DEDB;
 	font-size:12px;
 	border:3px solid white;
 	-webkit-border-bottom-right-radius: 6px;
@@ -962,15 +967,6 @@ a,
 	text-decoration:underline;
 }
 
-.component-navigator-tabs a{
-	color:#333 !important;
-}
-
-.component-navigator-tabs a:hover,
-.component-navigator-menu a:hover{
-	color:#333 !important;
-	text-decoration:none !important;
-}
 
 .links-extra {
 	padding:5px 5px 0 0;
@@ -1743,7 +1739,7 @@ addEncargado{
 
 .component-index-guide .past-item{
 	color:#FFF;
-	background:url(../images/bg-wizard-past.gif) no-repeat right -5px #b8d3b9; 
+	background:url(../images/bg-wizard-past.gif) no-repeat right -5px #b8d3b9;
 	padding-right:20px;
 }
 
@@ -1756,7 +1752,7 @@ addEncargado{
 }
 .component-index-guide .past-item span{
 	background:url(../images/wzr-current-prev-usado.gif) no-repeat right 0;
-	
+
 }
 
 .eliminarEncargado {
@@ -1774,7 +1770,7 @@ addEncargado{
 }
 
 .cursorDrag {
-	cursor: move;	
+	cursor: move;
 }
 
 .cursorDrag, x:-moz-any-link{
@@ -1799,31 +1795,31 @@ table.tablesorter thead tr .header {
 	*cursor: no-drop !important;
 }
 
-.ui-state-disabled, .ui-widget-content .ui-state-disabled { 
-	opacity: .35; 
-	filter: alpha(opacity=35); 
-	background-image: none; 
+.ui-state-disabled, .ui-widget-content .ui-state-disabled {
+	opacity: .35;
+	filter: alpha(opacity=35);
+	background-image: none;
 }
 
 /* Paginador Grllas */
 
-.component-pager{ 
+.component-pager{
 	overflow:hidden;
 	*height:30px;
 	font-size:11px;
 	padding:8px 4px 4px 4px;
 }
 
-.component-pager .counter-all{ 
+.component-pager .counter-all{
 	float:left;
 	padding-top:4px;
 }
 
-.component-pager .counter-pages{ 
+.component-pager .counter-pages{
 	float:right;
 }
 
-.component-pager .counter-pages a{ 
+.component-pager .counter-pages a{
 	display:block;
 	float:left;
 	padding:2px 4px;
@@ -1833,7 +1829,7 @@ table.tablesorter thead tr .header {
 }
 
 .component-pager .counter-pages a:hover,
-.component-pager .counter-pages .current-page{ 
+.component-pager .counter-pages .current-page{
 	background:#090;
 	color:#FFF;
 	text-decoration:none;

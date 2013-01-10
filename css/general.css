@@ -57,6 +57,7 @@ ul {
 	position: fixed;
 	width: 100%;
 	border-bottom: 4px solid #24823A;
+	z-index: 100;
 }
 
 .header-app {
@@ -88,9 +89,11 @@ ul {
 	width:980px;
 	margin:0 auto;
 	font-size:12px;
-	background:#FFF;
+	background:#F1F1F1;
 	overflow:hidden;
-	background:url(../images/sidebar-bg.gif) repeat-y 260px 0 #fff;
+	-webkit-box-shadow: 0 0 3px #999;
+	-moz-box-shadow: 0 0 3px #999;
+	-o-box-shadow: 0 0 3px #999;
 	box-shadow: 0 0 3px #999;
 }
 
@@ -99,7 +102,6 @@ ul {
 	float:left;
 	padding:30px 10px 10px 20px;
 	*width:225px;
-	background:#f1f1f1;
 }
 
 .app .sidebar ul {
@@ -135,6 +137,7 @@ ul {
 	float:left;
 	padding:30px;
 	min-height:995px;
+	background: #FFF;
 }
 
 .app .content h2 {
@@ -265,16 +268,14 @@ ul {
 
 .color_palette{
 	overflow:hidden;
-	border: 2px solid #FFFFFF;
-  -webkit-box-shadow: 0 0 4px #DDDDDD;
-	-moz-box-shadow: 0 0 4px #DDDDDD;
-	box-shadow: 0 0 4px #DDDDDD;
+	border: 1px solid #ccc;
+	padding: 6px;
 }
 
 .color_palette li{
 	display:block;
 	font-size: 14px;
-  padding: 30px;
+  padding: 26px;
   text-align: center;
   width: 102px;
 	float:left;

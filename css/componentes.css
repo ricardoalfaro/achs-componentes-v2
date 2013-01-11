@@ -119,7 +119,7 @@ form select {
 }
 
 .forms-row-single-division.left {
-	width:22%;
+	width:35%;
 	margin-right:5%;
 	border-bottom: 1px solid #ddd;
 }
@@ -188,8 +188,10 @@ h1 a {
 }
 
 .app h1{
+	font-family: 'DinWeb', Arial, sans-serif;
 	float:left;
 	display:block;
+	height: 30px;
 }
 
 .app h2{
@@ -199,6 +201,7 @@ h1 a {
 	padding-left:5px;
 }
 
+.derecho,
 .derecho a{
 	float:right;
 	margin-top:0px;
@@ -252,27 +255,24 @@ h1 a {
 	width: 220px;
 	padding: 0;
 	font-size:12px;
-	border:3px solid #9fa5a2;
 	display:none;
 	font-family:Arial;
-	-moz-box-shadow:0 0 12px #999;
-	box-shadow:0 0 12px #999;
-	-webkit-box-shadow:0 0 12px #999;
+	border:3px solid #098137 !important;
 	margin-left:68px;
 	margin-top:-22px;
-	border-radius:0 !important;
-	-webkit-border-radius:0 !important;
-	-moz-border-radius:0 !important;
 	background:#ddd;
+		-webkit-border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	border-radius:0 !important;
 }
 
 .ui-datepicker .ui-datepicker-header {
 	position:relative;
 	border-bottom:1px solid #9fa5a2;
-	background:url(../images/bg-header-calendar.gif) repeat-x #c2c6c4;
-	border-radius:0 !important;
+	background: #dbdbdb;
 	-webkit-border-radius:0 !important;
 	-moz-border-radius:0 !important;
+	border-radius:0 !important;
 	margin:0;
 }
 
@@ -286,7 +286,7 @@ h1 a {
 
 .ui-datepicker .ui-datepicker-title {
 	text-align: left;
-	padding:1px 4px 0 4px;
+	padding:3px 4px 3px 4px;
 }
 
 .ui-datepicker .ui-datepicker-title select {
@@ -308,7 +308,7 @@ h1 a {
 	font-size:11px;
 	border-collapse: collapse;
 	margin:0 0 0 1px;
-	background:#e0e3e1;
+	background:#dbdbdb;
 }
 
 .ui-datepicker th {
@@ -316,14 +316,15 @@ h1 a {
 	text-align: center;
 	font-weight: bold;
 	border: 0;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
 }
 
 .ui-datepicker td {
 	border: 0;
 	padding: 1px;
-	background:#f1f3f2;
-	border-top:1px solid #fff;
-	border-left:1px solid #fff;
+	background:#eeeeee;
+	border-bottom:1px solid #fff;
 	text-align:center;
 	line-height:12px;
 }
@@ -331,10 +332,10 @@ h1 a {
 .ui-datepicker td span,
 .ui-datepicker td a {
 	display: block;
-	padding:2px 0;
+	padding:4px 0;
 	text-align: center;
 	text-decoration: none;
-	color:#000;
+	color:#666 !important;
 	font-weight:bold;
 	line-height:inherit;
 	height:13px;
@@ -342,7 +343,12 @@ h1 a {
 
 .ui-datepicker .ui-datepicker-calendar .ui-state-highlight,
 .ui-datepicker .ui-datepicker-calendar .ui-state-hover {
-	background:#e0e3e1;
+	background:#82bd27;
+	color: #fff !important;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-highlight {
+	background:darkOrange;
 }
 
 .ui-datepicker .ui-datepicker-buttonpane {
@@ -428,23 +434,17 @@ button[disabled] div {
 }
 
 button div span {
-	background:url(../images/component-button-right.gif) no-repeat -1px 0;
+	background:url(../images/btn_green.png) repeat right top;
 	padding:8px 18px;
-	*padding:8px 6px;
 	display:block;
 	font-weight:bold;
-	text-shadow: #000 0 0 4px;
-
-	-webkit-border-radius:4px;
-	-moz-border-radius:4px;
-	-o-border-radius:4px;
-	-ms-border-radius:4px;
-	border-radius:4px;
 	margin:0 !important;
+	font-size: 13px;
+	line-height: 18px;
 }
 
 button div span.over {
-	background-position:-1px -32px;
+	background-position:right bottom;
 }
 
 button div span.press {
@@ -452,7 +452,7 @@ button div span.press {
 }
 
 button[disabled] div span {
-	background-position:-1px -96px;
+	background:#ccc;
 	color:#888;
 	text-shadow:0 1px 0 #FFF;
 	cursor: not-allowed;
@@ -460,14 +460,14 @@ button[disabled] div span {
 
 button.cancel-btn div {
 	font-size:12px;
-	color:#029900;
+	color:#098137;
 	background:none;
 }
 
 button.cancel-btn div span {
 	background:none;
 	text-shadow: none;
-	padding:8px 0;
+	padding:8px 10px;
 }
 
 /* Navigator Tabs */
@@ -503,7 +503,7 @@ button.cancel-btn div span {
 .component-navigator-tabs ul li a {
 	display:block;
 	text-decoration:none;
-	color:#fff;
+	color:#fff !important;
 	outline:0px;
 	padding:7px 20px 7px 20px;
 
@@ -558,7 +558,7 @@ button.cancel-btn div span {
 .component-navigator-tabs .tab-select a:hover {
 	font-weight:bold;
 	border:none;
-	color:#000;
+	color:#000 !important;
 }
 
 /*.component-navigator-tabs a{
@@ -672,7 +672,7 @@ button.cancel-btn div span {
 }
 
 .component-search-forms {
-	padding:10px 15px 10px 25px;
+	padding:10px 15px 10px 18px;
 	font-size:12px;
 	border:3px solid white;
 	-webkit-border-bottom-right-radius: 6px;
@@ -694,11 +694,11 @@ button.cancel-btn div span {
 }
 
 .standar-text-box {
-	width:296px;
+	width:230px;
 }
 
 .forms-two-cols .standar-text-box {
-	width:258px;
+	width:230px;
 }
 
 .standar-combo {
@@ -706,7 +706,7 @@ button.cancel-btn div span {
 }
 
 .forms-two-cols .standar-combo {
-	width:260px;
+	width:250px;
 }
 
 .condensed-combo,
@@ -762,19 +762,19 @@ button.cancel-btn div span {
 }
 
 .component-standar-grid table th {
-	border-right:1px solid white;
-	background-color:#c8d0cc;
+	border-top:1px solid #ccc;
+	background-color:#FFF;
 	padding:8px;
 	text-align:left;
 	font-size:12px;
 }
 
 .component-standar-grid table td {
-	border:1px solid white;
 	border-bottom:none;
 	border-left:none;
-	padding:4px 8px;
+	padding:6px 8px;
 	text-align:left;
+	background: #dbdbdb;
 }
 
 .standar-grid-model a{
@@ -801,8 +801,8 @@ button.cancel-btn div span {
 }
 
 .component-standar-grid table tr.subnivel-th th {
-	border-right:1px solid white;
-	background-color:#e3e7e5;
+	border-right:1px solid #ccc;
+	border-top:1px solid #ccc;
 	padding:3px 8px;
 	font-size:11px;
 	font-weight:normal;
@@ -810,7 +810,7 @@ button.cancel-btn div span {
 
 .component-standar-grid table tr.marked td,
 .component-standar-grid table tr.marked th{
-	background-color:#e3e7e5;
+
 	font-weight:bold;
 }
 
@@ -826,9 +826,13 @@ button.cancel-btn div span {
 	border-top:1px solid #ccc;
 }
 
+.component-standar-grid table tr.odd td {
+	background-color:#eeeeee;
+}
+
 .component-standar-grid h2,
 .component-standar-grid h3 {
-	background-color:#e3e7e5 !important;
+	background-color:#dbdbdb !important;
 	padding:6px !important;
 	font-size:14px !important;
 	margin:0 !important;
@@ -837,7 +841,7 @@ button.cancel-btn div span {
 }
 
 .component-standar-grid h3 {
-	background-color:#d7dedb !important;
+	background-color:#eeeeee !important;
 	font-size:12px !important;
 }
 
@@ -876,28 +880,21 @@ button.cancel-btn div span {
 .component-datatable {
 	width:943px;
 	border:1px solid #d2d2d2;
-	-webkit-border-bottom-right-radius: 6px;
-	-webkit-border-bottom-left-radius: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-moz-border-radius-bottomleft: 6px;
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius: 6px;
-	border-bottom-width:2px;
 	border-top:none;
 	padding:5px;
 }
 
+
 /* Mensajes*/
 
 .component-message-result {
-	background:#e3e7e5;
+	background:#f1f1f1;
 	font-family:Helvetica, Arial, sans-serif;
 	font-size:12px;
 	margin:6px 0;
 	overflow:hidden;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	border:1px solid #ccc;
+	clear: both;
 }
 
 .component-message-result.alert {
@@ -907,14 +904,14 @@ button.cancel-btn div span {
 }
 
 .component-message-result.info {
-	background:url(../images/sprite-icons-messages.gif) no-repeat 20px -223px #fffbe0;
+	background:url(../images/sprite-icons-messages.gif) no-repeat 20px -223px #F0F7E5;
 	padding-left:30px;
-	border:1px solid #ebe090;
+	border:1px solid #098137;
 }
 
 
 .component-message-result p {
-	padding:10px 14px;
+	padding:14px;
 	margin:0;
 	float:left;
 	line-height:14px !important;
@@ -923,13 +920,17 @@ button.cancel-btn div span {
 .component-message-result a.accion {
 	display:block;
 	float:right;
-	color:#1ca21c;
+	color:#666;
 	text-decoration:none;
 	padding-left:10px;
 	background:url(../images/icons/green-arrow.gif) no-repeat 0 2px;
 	margin-right:20px;
-	margin-top:11px;
+	margin-top:14px;
 	text-shadow: #fff 0 0 4px;
+}
+
+.component-message-result a.accion:hover {
+	color:#000;
 }
 
 .component-message-result p span{
@@ -937,10 +938,8 @@ button.cancel-btn div span {
 }
 
 .component-message-result.close a {
-	background:url(../images/icons/close.gif) no-repeat right 2px;
-	color:red;
-	padding-right:10px;
-	padding-left:0;
+	background:url(../images/icons/close.gif) no-repeat 0 3px;
+	padding-left: 13px;
 }
 
 
@@ -956,20 +955,21 @@ button.cancel-btn div span {
 a,
 .links-content a,
 .grid-selection a {
-	color:#090;
+	color:#098137 !important;
 	text-decoration:none;
 }
 
 #app a:hover,
 .links-content a:hover,
 .grid-selection a:hover {
-	color:#0c0;
+	color:#82bd27 !important;
 	text-decoration:underline;
 }
 
 
 .links-extra {
-	padding:5px 5px 0 0;
+	padding:10px 5px 0 0;
+		float: right;
 }
 
 .sintabs .links-extra {
@@ -977,16 +977,19 @@ a,
 }
 
 .links-extra a {
+	font-family: 'DINWeb', Arial, sans-serif;
 	color:#009900 !important;
 	text-decoration:underline;
 }
 
 .links-content .help-link {
+	font-family: 'DINWeb', Arial, sans-serif;
 	padding:3px 18px 3px 3px;
 	display:block;
 }
 
 .links-content .customize-link {
+	font-family: 'DINWeb', Arial, sans-serif;
 	padding:3px 18px 3px 3px;
 	display:block;
 	background:url(../images/icons/configtools.gif) no-repeat right 2px;
@@ -1365,13 +1368,7 @@ addEncargado{
 	background-color: #FFF;
 	padding: 5px;
 	display: none;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	-moz-box-shadow:0 0 14px #333;
-	box-shadow:0 0 14px #333;
-	-webkit-box-shadow:0 0 14px #333;
-	*border:1px solid #666;
+	border:1px solid #666;
 	margin:-12px 0 0 0;
 	font-family: Arial;
 	font-size:12px;
@@ -1822,7 +1819,7 @@ table.tablesorter thead tr .header {
 .component-pager .counter-pages a{
 	display:block;
 	float:left;
-	padding:2px 4px;
+	padding:4px 6px;
 	margin:0 2px;
 	border:1px solid #ccc;
 	color:#CCC;
@@ -1830,9 +1827,15 @@ table.tablesorter thead tr .header {
 
 .component-pager .counter-pages a:hover,
 .component-pager .counter-pages .current-page{
-	background:#090;
-	color:#FFF;
+	background:#098137;
+	color:#FFF !important;
 	text-decoration:none;
+	border-color:#098137;
+}
+
+.component-pager .counter-pages a:hover{
+	background:#82bd27;
+	border-color:#82bd27;
 }
 
 /* Central Stage */
@@ -1919,13 +1922,11 @@ table.tablesorter thead tr .header {
 }
 
 .buttonlink{
-	color: black;
-	background: white;
-	padding: 6px 12px;
-	font-size: 11px;
-	font-weight: bold;
+	background: darkOrange;
+	padding: 8px 10px;
+	font-size: 12px;
 	margin-top: 3px;
-	border-radius: 4px;
+	color: #fff !important;
 }
 
 .buttonlink:hover{

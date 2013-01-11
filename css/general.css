@@ -133,10 +133,10 @@ ul {
 }
 
 .app .content {
-	width:635px;
+	width:640px;
 	float:left;
 	padding:30px;
-	min-height:995px;
+	min-height:1208px;
 	background: #FFF;
 }
 
@@ -249,7 +249,8 @@ ul {
 	text-decoration:underline;
 }
 
-.new{
+.new,
+.update{
 	width: 25px;
 	*height: 10px;
 	vertical-align: middle;
@@ -265,6 +266,11 @@ ul {
 	margin: 1px 4px 0 0;
 	float:right;
 }
+
+.update{
+	background-color: #098137;
+}
+
 
 .color_palette{
 	overflow:hidden;

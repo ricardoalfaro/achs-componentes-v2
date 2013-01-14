@@ -448,7 +448,7 @@ button div span.over {
 }
 
 button div span.press {
-	background-position:-1px -64px;
+	background-position:-1px -33px;
 }
 
 button[disabled] div span {
@@ -579,6 +579,7 @@ button.cancel-btn div span {
 	font-size:12px;
 	color:black;
 	margin-bottom:8px;
+	clear: both;
 }
 
 .component-navigator-menu ul {
@@ -684,9 +685,10 @@ button.cancel-btn div span {
 }
 
 .component-search-actions {
-	padding:10px 20px 8px 20px;
+	padding:16px 20px 0 20px;
 	text-align:center;
 	*height:35px; /*Alto para controlar espaciado en IE*/
+	background: #f1f1f1;
 }
 
 .content-grupo .component-search-actions {
@@ -853,19 +855,17 @@ button.cancel-btn div span {
 	text-align:center !important;
 }
 
-/*.draggableElement td,
-.draggableElement th {
-	padding-top:10px !important;
-	padding-bottom:10px !important;
-}*/
+.draggableElement td{
+	border-bottom: 1px solid #ccc !important;
+}
 
 .draggableTable th.dragIcon {
 	text-align:left !important;
 }
 
 .draggableTable .rowDragHover{
-	border-top:3px solid #090 !important;
-	background-color:#EBEDD0 !important;
+	border-top:3px solid darkOrange !important;
+	background-color:#F0F7E5 !important;
 	padding-top:9px !important;
 	padding-bottom:9px !important;
 }
@@ -878,10 +878,9 @@ button.cancel-btn div span {
 
 /* Componente DataTable */
 .component-datatable {
-	width:943px;
-	border:1px solid #d2d2d2;
+	border:1px solid #ccc;
 	border-top:none;
-	padding:5px;
+	padding:2px;
 }
 
 
@@ -1106,17 +1105,11 @@ a,
 /* Contentendores Componentes CSS3 */
 
 .component-contents {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow:0 0 12px #e2e2e2;
-	box-shadow:0 0 12px #e2e2e2;
-	-webkit-box-shadow:0 0 12px #e2e2e2;
 	border:1px solid #ddd;
 	background:#FFF;
 	overflow:hidden;
-	width:938px;
-	margin-left:6px;
+	width:942px;
+	margin-left:1px;
 	margin-top:5px;
 	padding:4px;
 	background:#FFF;
@@ -1129,7 +1122,7 @@ a,
 
 .component-draggable-mid {
 	width:465px;
-	margin: 0 2px 0 2px;
+	margin: 0 2px 0 4px;
 	float:left;
 	overflow:hidden;
 	height:493px;
@@ -1155,22 +1148,17 @@ a,
 }
 
 .content-draggable h4 {
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	background:#c7d0cb;
+	background:#82bd27;
 	padding:7px 10px;
 	font-weight:bold;
 	margin:0;
 	display:block;
 	font-size:12px;
+	color: #fff;
 }
 
 .content-table h4 {
-	background:#dcdddd;
+	background:#dbdbdb;
 	padding:6px 10px;
 	font-weight:bold;
 	margin:0;
@@ -1179,7 +1167,7 @@ a,
 }
 
 .content-table h5 {
-	background:#e3e7e6;
+	background:#dbdbdb;
 	padding:7px 10px;
 	font-weight:bold;
 	margin:0;
@@ -1211,12 +1199,12 @@ table.grid-selection {
 
 table.grid-selection td,
 table.grid-selection th {
-	background:#f1f3f2;
+	background:#eee;
 	border-bottom:1px solid #FFF;
 	padding:6px;
 	text-align:left;
 	padding-left:18px;
-	background:url(../images/vin-table-left.gif) no-repeat #f1f3f2 6px 5px;
+	background:url(../images/vin-table-left.gif) no-repeat #f1f1f1 6px 5px;
 }
 
 table.grid-selection th.links,
@@ -1251,13 +1239,7 @@ table.grid-selection td.links {
 }
 
 .title-filter {
-	background:#b6d3b5;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	background:#098137;
 	overflow:hidden;
 	height:28px;
 }
@@ -1269,6 +1251,7 @@ table.grid-selection td.links {
 	font-size:12px;
 	padding:8px 24px;
 	float:left;
+	color: #fff;
 }
 
 .component-draggable-mid .title-filter{
@@ -1283,6 +1266,7 @@ table.grid-selection td.links {
 .title-filter .add-filter {
 	float:right;
 	padding:10px;
+	color: #fff;
 }
 
 .component-draggable-mid .title-filter .add-filter {
@@ -1291,10 +1275,16 @@ table.grid-selection td.links {
 
 .title-filter .add-filter input {
 	margin-left:5px;
+	border:1px solid #82bd27;
+	background: #F0F7E5;
+}
+
+.title-filter .add-filter input:focus {
+	background: #fff;
 }
 
 .content-grupo {
-	background:#dbe9da;
+	background:#F0F7E5;
 	padding:10px 8px;
 }
 
@@ -1398,8 +1388,8 @@ addEncargado{
 
 .withClose .btn-cerrar {
 	position: absolute;
-	right:-25px !important;
-	top:-25px !important;
+	right:-2px !important;
+	top:11px !important;
 	width: 34px;
 	margin: 0;
 	height: 34px;
@@ -1410,12 +1400,14 @@ addEncargado{
 }
 
 .modalPopup h3 {
-	font-size:15px;
+	font-family: 'DinWeb', Arial, sans-serif;
+	font-size:18px;
 	margin:6px 2px;
 	display:block;
-	padding-left:22px;
-	font-weight:600;
+	font-weight:normal;
+	letter-spacing: -0.07em;
 }
+/*
 
 .modalPopup h3.msj-advertencia {
 	background:url(../images/icon-adv-modal.gif) no-repeat 0 0;
@@ -1425,6 +1417,8 @@ addEncargado{
 	background:url(../images/icon-error-modal.gif) no-repeat 0 0;
 }
 
+*/
+
 .modalPopup h3.msj-generico {
 	background:none;
 	padding-left:0;
@@ -1433,12 +1427,12 @@ addEncargado{
 .modalPopup .content-modal {
 	background:#fff;
 	border:none;
-	padding:7px;
+	padding:0;
 	margin-bottom:5px;
 }
 
 .content-modal .all-content{
-	padding:6px;
+	padding:20px 12px;
 }
 
 .content-modal .all-content a{
@@ -1462,13 +1456,11 @@ addEncargado{
 .ui-dialog {
 	padding:12px;
 	position:relative;
-	background: #ffffcb;
-	-moz-box-shadow:0 0 12px #333;
-	box-shadow:0 0 12px #333;
-	-webkit-box-shadow:0 0 12px #333;
+	background: #f1f1f1;
 	/*overflow:inherit !important;*/
 	font-size:12px;
 	font-family:Arial;
+	border:3px solid #098137;
 }
 
 .ui-dialog .ui-dialog-title {
@@ -1495,7 +1487,7 @@ addEncargado{
 .ui-dialog .ui-dialog-titlebar-close,
 .ui-dialog .ui-dialog-titlebar-close:hover,
 .ui-dialog .ui-dialog-titlebar-close:focus {
-	background:url(../images/close-window.gif) no-repeat 0 0 !important;
+	background:url(../images/close.png) no-repeat 0 0 !important;
 	border:none;
 	height:34px;
 	margin:0;
@@ -1649,16 +1641,10 @@ addEncargado{
 .component-index-guide span{
 	display:block;
 	padding:6px 12px;
-	background:url(../images/bg-wizard-select.gif) repeat-x 0 bottom;
+	background:#098137;
 	color:#FFF;
-	-webkit-border-bottom-right-radius: 6px;
-	-webkit-border-bottom-left-radius: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-moz-border-radius-bottomleft: 6px;
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius: 6px;
-	text-shadow:0 0 4px #000000;
 	font-weight:bold;
+	font-size: 12px;
 }
 
 .component-index-guide ul{
@@ -1668,13 +1654,7 @@ addEncargado{
 	display:block;
 	overflow:hidden;
 	list-style:none;
-	background:#e2e6e4;
-	-webkit-border-top-left-radius: 6px;
-	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
+	background:#eee;
 	height:25px;
 }
 
@@ -1693,21 +1673,14 @@ addEncargado{
 
 .component-index-guide .first{
 	display:block;
-	-webkit-border-top-left-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	border-top-left-radius: 6px;
 }
 
 .component-index-guide .last{
 	display:block;
-	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topright: 6px;
-	border-top-right-radius: 6px;
 }
 .component-index-guide .current-item{
 	color:#FFF;
 	background:url(../images/wzr-current.gif) repeat-x;
-	text-shadow: #000 0 0 4px;
 	padding:0;
 }
 
@@ -1775,16 +1748,16 @@ addEncargado{
 }
 
 table.tablesorter thead tr .headerSortUp {
-	background: url(../images/asc.gif) no-repeat #B7C0BB right center !important;
+	background: url(../images/asc.gif) no-repeat #fff right center !important;
 }
 table.tablesorter thead tr .headerSortDown {
-	background: url(../images/desc.gif) no-repeat #B7C0BB right center !important;
+	background: url(../images/desc.gif) no-repeat #fff right center !important;
 }
 table.tablesorter thead tr .header {
-	background: url(../images/bg.gif) no-repeat #C8D0CC right center;
+	background: url(../images/bg.gif) no-repeat #f1f1f1 right center;
 }
 .disable-event-click {
-	background: url() no-repeat #C8D0CC right center !important;
+	background: url() no-repeat #f1f1f1 right center !important;
 }
 
 .ui-draggable-disabled {
@@ -1842,13 +1815,7 @@ table.tablesorter thead tr .header {
 
 .component-central_stage {
 	/*border:1px solid #d2d2d2;*/
-	background:#f1f3f2;
-	-webkit-border-bottom-right-radius: 6px;
-	-webkit-border-bottom-left-radius: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-moz-border-radius-bottomleft: 6px;
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius: 6px;
+	background:#F0F7E5;
 	border-bottom-width:2px;
 	padding:5px;
 }
@@ -1863,9 +1830,6 @@ table.tablesorter thead tr .header {
 
 .checklist-content{
 	font-size:12px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 	border:1px solid #ccc;
 	padding:4px;
 	background:#fff;
@@ -1880,15 +1844,9 @@ table.tablesorter thead tr .header {
 
 .checklist-content h4{
 	margin:0;
-	background:#c8d1cc;
+	background:#dbdbdb;
 	padding:6px 8px;
 	display:block;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
 	font-weight:bold;
 	font-size: 12px;
 }

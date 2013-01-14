@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project name="ui-achs" default="" basedir=".">
+	<property file="project.properties"/>
+
+	<target name="deployremote">
+		<scp todir="abrahambarrera:admin@192.168.0.220:/abraham8082/webapps/ui-achs/" sftp="true" >
+			<fileset dir="${basedir}/web"></fileset>
+      	</scp>
+	</target>
+
+	<target name="war" description="Build the web application archive">
+		<mkdir dir="${dist.dir}"></mkdir>
+		<war warfile="${dist.dir}/${war.name}.war" basedir="${basedir}/web" needxmlfile="false"></war>
+	</target>
+	
+	<target name="ear" depends="war">
+    	<ear destfile="${dist.dir}/${ear.name}.ear" appxml="${basedir}/resources/application.xml">
+    		<fileset dir="${dist.dir}" includes="*.war"/>
+	    </ear>
+	</target>
+</project>

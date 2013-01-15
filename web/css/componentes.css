@@ -1469,6 +1469,7 @@ addEncargado{
 }
 
 .ui-dialog .ui-dialog-titlebar {
+	font-family: 'DinWeb', Arial, sans-serif;
 	position:relative;
 	cursor:move;
 	background:none;
@@ -1493,14 +1494,10 @@ addEncargado{
 	margin:0;
 	padding:0;
 	position:absolute;
-	right:-39px;
-	_right:-25px; /* Para internet explorer 6 */
-	top:-33px;
+	right:-15px;
+	top:--3px;
 	width:34px;
 	z-index:2000 !important;
-	border-radius:0;
-	-moz-border-radius:0;
-	-webkit-border-radius:0;
 	outline:0px;
 }
 
@@ -1528,18 +1525,14 @@ addEncargado{
 }
 
 .ui-corner-all {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
 }
 
 .ui-dialog .ui-dialog-content {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border:1px solid #DDDDDD;
 	overflow:auto;
-	padding:15px;
+	padding:0;
 	background:#FFF;
 }
 
@@ -1580,20 +1573,20 @@ addEncargado{
 }
 
 .ui-dialog .ui-dialog-buttonpane button {
-	font-family:Arial;
-	font-size:11px;
-	border:none;
-	color:white;
+	background:url(../images/btn_green.png) repeat right top;
+	padding:8px 18px;
+	font-weight:bold;
+	margin:0 !important;
+	font-size: 13px;
+	line-height: 18px;
 	outline:none;
 	cursor:pointer;
-	background:url(../images/component-button-right.gif) repeat-x 0 0;
-	padding:7px 20px 7px 20px;
-	width:auto;
-	cursor:pointer;
-	float:none;
-	margin:0 2px;
-	font-weight:bold;
-	text-shadow: #000 0 0 4px;
+	color: #fff;
+}
+
+.ui-dialog-buttonset{
+	background: #f1f1f1;
+	padding: 16px 10px;
 }
 
 .ui-error-achs {

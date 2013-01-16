@@ -918,7 +918,8 @@ button.cancel-btn div span {
 	line-height:14px !important;
 }
 
-.component-message-result a.accion {
+.component-message-result a.accion,
+a.accion {
 	display:block;
 	float:right;
 	color:#666;
@@ -1115,6 +1116,7 @@ a,
 	margin-top:5px;
 	padding:4px;
 	background:#FFF;
+	clear: both;
 }
 
 .component-draggable-two-sides {

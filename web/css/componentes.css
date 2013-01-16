@@ -84,6 +84,7 @@ border:1px solid #666;
 form input[type=radio],
 form input[type=checkbox]{
 	margin-right:6px;
+	vertical-align: middle;
 }
 
 form select {
@@ -480,6 +481,7 @@ button.cancel-btn div span {
 	border-bottom: none;
 	clear:both;
 	padding: 2px;
+	position: relative;
 }
 
 .component-navigator-tabs ul {
@@ -685,7 +687,7 @@ button.cancel-btn div span {
 }
 
 .component-search-actions {
-	padding:16px 20px 0 20px;
+	padding:16px 20px 20px 20px;
 	text-align:center;
 	*height:35px; /*Alto para controlar espaciado en IE*/
 	background: #f1f1f1;
@@ -1259,7 +1261,7 @@ table.grid-selection td.links {
 }
 
 .action-buttons-right {
-	margin-left:833px;
+/*	margin-left:833px;*/
 	position:absolute;
 }
 
@@ -1284,7 +1286,7 @@ table.grid-selection td.links {
 }
 
 .content-grupo {
-	background:#F0F7E5;
+	background:#f1f1f1;
 	padding:10px 8px;
 }
 
@@ -1454,7 +1456,7 @@ addEncargado{
 }
 
 .ui-dialog {
-	padding:12px;
+	padding:12px 12px 0;
 	position:relative;
 	background: #f1f1f1;
 	/*overflow:inherit !important;*/
@@ -1532,7 +1534,7 @@ addEncargado{
 
 .ui-dialog .ui-dialog-content {
 	overflow:auto;
-	padding:0;
+	padding:0px;
 	background:#FFF;
 }
 
@@ -1576,7 +1578,7 @@ addEncargado{
 	background:url(../images/btn_green.png) repeat right top;
 	padding:8px 18px;
 	font-weight:bold;
-	margin:0 !important;
+	margin:0 2px !important;
 	font-size: 13px;
 	line-height: 18px;
 	outline:none;

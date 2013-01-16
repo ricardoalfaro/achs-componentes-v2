@@ -14,19 +14,19 @@
 }
 
 .fb-enabled{
-	background-position:-48px 0;
+	background-position:-51px 0;
 }
 
 .fb-disabled{
-	background-position:-48px -16px;
+	background-position:-51px -17px;
 }
 
 .tw-enabled{
-	background-position:-32px 0;
+	background-position:-34px 0;
 }
 
 .tw-disabled{
-	background-position:-32px -16px;
+	background-position:-34px -17px;
 }
 
 .mail-enabled{
@@ -34,15 +34,15 @@
 }
 
 .mail-disabled{
-	background-position:0 -16px;
+	background-position:0 -17px;
 }
 
 .sms-enabled{
-	background-position:-16px 0;
+	background-position:-17px 0;
 }
 
 .sms-disabled{
-	background-position:-16px -16px;
+	background-position:-17px -17px;
 }
 
 .ui-accordion{

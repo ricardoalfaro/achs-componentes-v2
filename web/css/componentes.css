@@ -999,7 +999,7 @@ a,
 
 
 .linkPdf, .linkExcel, .linkWord, .linkZip, .linkGlosario, .linkAdvertencia, .ayuda-link, .flame-link, .maletin-link, .check-link, .add-link, .dinero-link{
-	padding:3px 18px 3px 0;
+	padding:3px 22px 3px 0;
 }
 
 .icono-pdf, .icono-excel, .icono-word, .icono-zip, .icono-glosario, .icono-advertencia, .icono-ayuda, .icono-fuego, .icono-maletin, .icono-vb, .icono-enfermeria, .icono-dinero, .icono-vb, .icono-analisis, .icono-mailing, .icono-admin, .icono-n_accidentados, .icono-n_pensionados, .icono-n_indemnizados, .icono-n_fallecidos, .icono-calculo_tasa, .icono-carta{
@@ -1008,51 +1008,52 @@ a,
 	*display:block;
 	*float:left;
 	height:18px;
+	/*background:url(../images/sprite_icons.gif) no-repeat 0 0;*/
 }
 
 .money-link,
 .icono-dinero{
-	background:url(../images/icons/money.gif) no-repeat right 2px;
+	background:url(../images/icons/money.gif) no-repeat right 0;
 }
 .add-link,
 .icono-enfermeria{
-	background:url(../images/icons/add.gif) no-repeat right 2px;
+	background:url(../images/icons/add.gif) no-repeat right 0;
 }
 .check-link,
 .icono-vb{
-	background:url(../images/icons/check.gif) no-repeat right 2px;
+	background:url(../images/icons/check.gif) no-repeat right 0;
 }
 .suitcase-link,
 .icono-maletin{
-	background:url(../images/icons/suitcase.gif) no-repeat right 2px;
+	background:url(../images/icons/suitcase.gif) no-repeat right 0;
 }
 .flame-link,
 .icono-fuego{
-	background:url(../images/icons/flame.gif) no-repeat right 2px;
+	background:url(../images/icons/flame.gif) no-repeat right 0;
 }
 .help-link,
 .icono-ayuda{
-	background:url(../images/icons/pregunta-ayuda.gif) no-repeat right 2px;
+	background:url(../images/icons/pregunta-ayuda.gif) no-repeat right 0;
 }
 .linkPdf,
 .icono-pdf{
-	background:url(../images/icons/pdf.gif) no-repeat right 2px;
+	background:url(../images/icons/pdf.gif) no-repeat right 0;
 }
 .linkExcel,
 .icono-excel{
-	background:url(../images/icons/excel.gif) no-repeat right 2px;
+	background:url(../images/icons/excel.gif) no-repeat right 0;
 }
 .linkWord,
 .icono-word{
-	background:url(../images/icons/word.gif) no-repeat right 2px;
+	background:url(../images/icons/word.gif) no-repeat right 0;
 }
 .linkZip,
 .icono-zip{
-	background:url(../images/icons/zip.gif) no-repeat right 2px;
+	background:url(../images/icons/zip.gif) no-repeat right 0;
 }
 .linkGlosario,
 .icono-glosario{
-	background:url(../images/icons/glos.gif) no-repeat right 2px;
+	background:url(../images/icons/glos.gif) no-repeat right 0;
 }
 
 .icono-n_accidentados{
@@ -1097,7 +1098,7 @@ a,
 
 .linkAdvertencia,
 .icono-advertencia{
-	background:url(../images/icons/auxi_alert_a.gif) no-repeat right 2px;
+	background:url(../images/icons/auxi_alert_a.gif) no-repeat right 0;
 }
 
 .link-search{

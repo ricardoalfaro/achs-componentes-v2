@@ -1398,7 +1398,7 @@ addEncargado{
 	width: 34px;
 	margin: 0;
 	height: 34px;
-	background: url(../images/close-window-blank.png) no-repeat;
+	background: url(../images/close.png) no-repeat;
 	border:none;
 	z-index:2000 !important;
 	text-indent:-10000px;

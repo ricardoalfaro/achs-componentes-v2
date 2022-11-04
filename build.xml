@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<project name="ui-achs" default="" basedir=".">
-	<property file="project.properties"/>
-	<target name="war" description="Build the web application archive">
-		<mkdir dir="${dist.dir}"></mkdir>
-		<war warfile="${dist.dir}/${war.name}.war" basedir="${basedir}/web" needxmlfile="false"></war>
-	</target>
-</project>
